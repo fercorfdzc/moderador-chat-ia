@@ -1,0 +1,24 @@
+# Framework para crear la API (como Express en JavaScript pero para Python)
+fastapi
+
+# Servidor que "enciende" la API para que escuche peticiones
+uvicorn
+
+# Librería de inteligencia artificial de Facebook (para cargar el modelo .pt)
+torch
+
+# Librería de Hugging Face (para usar el tokenizer de BERT)
+transformers
+
+
+#CORRE ESTOOOOOOOO UNA VEZ
+#pip install -r api/requirements.txt
+
+"""
+DESPUES ESTOOOOOOOOOOOOOOOOO
+
+cd api
+python -m uvicorn main:app --reload
+"""
+
+
