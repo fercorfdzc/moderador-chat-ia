@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from schemas import MessageInput, PredictionOutput
 from model_loader import load_model, predict
