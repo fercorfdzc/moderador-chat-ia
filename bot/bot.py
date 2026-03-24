@@ -3,10 +3,10 @@ from twitchio.ext import commands
 
 API_URL = "http://127.0.0.1:8000/predict"
 
-BOT_TOKEN = "oauth:jj1syyde8jxv1eltyapltsl5y9p9yh"  # token del bot con scope moderator:manage:chat_messages
-CLIENT_ID = "8r4ltdorvf2pl6i73ewhfpx9kueznp"        # de dev.twitch.tv/console
-BROADCASTER_ID = "1452332459"  # ID numérico del canal (no el nombre)
-MODERATOR_ID = "1452332459"       # ID numérico del bot
+BOT_TOKEN = "oauth:jj1syyde8jxv1eltyapltsl5y9p9yh"
+CLIENT_ID = "8r4ltdorvf2pl6i73ewhfpx9kueznp"
+BROADCASTER_ID = "1452332459"
+MODERATOR_ID = "1452332459"
 CHANNEL = "ceqw3bot"
 
 
@@ -25,7 +25,6 @@ class Bot(commands.Bot):
     async def delete_message(self, message):
         """Borra un mensaje usando la API REST de Twitch (Helix)"""
         try:
-            # El token sin el prefijo "oauth:"
             token = BOT_TOKEN.replace("oauth:", "")
 
             async with httpx.AsyncClient() as client:
@@ -66,25 +65,24 @@ class Bot(commands.Bot):
 
             label = result["label"]
             confidence = result["confidence"]
+            probs = result.get("probabilities", {})
+
+            hate_prob  = probs.get("hate",  confidence if label == "hate"  else 0.0)
+            toxic_prob = probs.get("toxic", confidence if label == "toxic" else 0.0)
+            combined   = hate_prob + toxic_prob
 
             print(f"{message.author.name}: {message.content}")
-            print(f"Clasificacion: {label} ({confidence:.2f})")
+            print(f"Clasificacion: {label} ({confidence:.2f}) | hate={hate_prob:.2f} toxic={toxic_prob:.2f} combinado={combined:.2f}")
 
-            # Borrar mensaje si es muy subido de tono
-            if (label == "hate" or label == "toxic") and confidence > 0.80:
+            # Borrar si la suma de hate + toxic supera 80%
+            if combined > 0.80:
                 await self.delete_message(message)
                 await message.channel.send(
                     f"@{message.author.name} tu mensaje fue eliminado por lenguaje inapropiado."
                 )
 
-            # Detecta hate con confianza media
-            elif label == "hate" and confidence > 0.50:
-                await message.channel.send(
-                    f"@{message.author.name} mensaje detectado como discurso de odio."
-                )
-
-            # Detecta tóxico con confianza media
-            elif label == "toxic" and confidence > 0.50:
+            # Advertencia si la suma supera 50% pero no llega al 80%
+            elif combined > 0.50:
                 await message.channel.send(
                     f"@{message.author.name} cuidado con el lenguaje."
                 )
