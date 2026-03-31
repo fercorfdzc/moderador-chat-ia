@@ -1,5 +1,5 @@
 
-# Moderador Automático de Conversaciones Escritas en Vivo
+# **Moderador Automático de Conversaciones Escritas en Vivo**
 Este proyecto consiste en el desarrollo de un sistema inteligente capaz de detectar lenguaje tóxico y discurso de odio en chats en tiempo real, utilizando técnicas modernas de Procesamiento de Lenguaje Natural (NLP).
 
 El sistema analiza mensajes escritos por los usuarios y los clasifica en distintas categorías como:
@@ -45,33 +45,13 @@ Este sistema automatiza la detección para mejorar la seguridad digital.
 
 | 🟢 Área |  🟡 Herramientas | 
 |-----------|-----------|
-| Lenguaje    | Python    | 
-| Deep Learning  | PyTorch   | 
-| NLP    | Hugging Face Transformers   | 
-| API | FastAPI   | 
-| Datos  | Pandas, Conjuntos de datos  | 
-| Evaluación | Scikit-learn   | 
-| Versiones   | Git + GitHub | 
-
-<table>
-  <thead>
-    <tr style="background-color: #4CAF50; color: white;">
-      <th>Tecnología</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Python</td>
-      <td>Backend</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td>React</td>
-      <td>Frontend</td>
-    </tr>
-  </tbody>
-</table>
-
+| **Lenguaje**    | *Python*    | 
+| **Deep Learning**  | *PyTorch*   | 
+| **NLP**    | *Hugging Face Transformers*   | 
+| **API** | *FastAPI*   | 
+| **Datos**  | *Pandas, Conjuntos de datos*  | 
+| **Evaluación** | *Scikit-learn*   | 
+| **Versiones**   | *Git + GitHub* | 
   
 ## Arquitectura del Sistema
 - Usuario envía mensaje en chat 
