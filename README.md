@@ -12,11 +12,17 @@ Desarrollar un sistema de moderación automática para chats en tiempo real que 
 
 ###  Objetivos Espeificos
 ° Diseñar un pipeline de NLP para análisis de mensajes cortos.  
+
 ° Implementar fine-tuning de un modelo para el idioma Español/Ingles.
-° Crear un dataset etiquetado (clean, toxic, hate).                 
+
+° Crear un dataset etiquetado (clean, toxic, hate). 
+
 ° Desarrollar una API REST para el modelo. 
+
 ° Integrar un bot para chats en vivo. 
+
 ° Definir reglas de moderación basadas en probabilidades
+
 ° Evaluar el modelo con métricas (precision, recall, F1).           
 
 ## ¿Qué problema resuelve?  🚩
