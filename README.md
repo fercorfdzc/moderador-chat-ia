@@ -25,32 +25,26 @@ Desarrollar un sistema de moderación automática para chats en tiempo real que 
 
 ° Evaluar el modelo con métricas (precision, recall, F1).           
 
-## ¿Qué problema resuelve?  🚩
+## ¿Qué problema resuelve?  
 los chats en vivo suelen contener:
 
-❌  *Insultos*
+  *Insultos*
 
-❌ *Acoso* 
+ *Acoso* 
 
-❌ *Lenguaje descriminatorio* 
+ *Lenguaje descriminatorio* 
 
 la Modelacion Manual:
 
-❌ *No es escalable*
+ *No es escalable*
 
-❌ *Es lenta* 
+ *Es lenta* 
  
-❌ *No cubre todos los mensajes* 
+ *No cubre todos los mensajes* 
 
 Por lo que:
 
-### 🟢 Este sistema automatiza la detección para mejorar la seguridad digital. 
-
-### Relevancia
-- *Mejora la convivencia en comunidades digitales*
-- *Reduce carga de moderadores humanos**
-- *Apoya a plataformas de streaming y creadores de contenido*
-- *Promueve entornos más seguros*
+###  Este sistema automatiza la detección para mejorar la seguridad digital. 
   
 ## Tecnologias Utilizadas
 
@@ -71,18 +65,21 @@ Por lo que:
 - Modelo NLP clasifica el contenido
 - Sistema aplica reglas de moderación
   
-### Datos y Recursos
+### Metodología
 1. Recolección
 - Datasets Personalizados
+  
 2. Preprocesamiento
 - Minúsculas
 - Limpieza de texto
 - Manejo de emojis
 - Tokenización
+  
 3. Modelado
 - Transformer preentrenado
 - Red neuronal de clasificación
 - Clasificación multiclase
+  
 4. Evaluación
 - Precision
 - Recall
@@ -101,7 +98,7 @@ Por lo que:
 - Ajuste de hiperparámetros
 - Mejora iterativa mediante retroalimentación
   
-### Retroalimentación
+### Resultados
 El sistema mejora mediante:
 - Análisis de errores
 - Ajuste de umbrales
@@ -132,6 +129,9 @@ El sistema mejora mediante:
 - Panel web de estadísticas
 - Soporte multilenguaje
 - Detección de emociones con extensión ML
+
+## Conclusión 
+Este proyecto contribuye a transformar las plataformas digitales en espacios más armoniosos, utilizando la IA como una herramienta segura, promoviendo un espacio de buen trato en entornos digitales. 
   
 ## Authors
 
