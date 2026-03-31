@@ -39,7 +39,7 @@ la Modelacion Manual:
  
 ❌ *No cubre todos los mensajes* 
 
-Este sistema automatiza la detección para mejorar la seguridad digital.
+### Por lo que este sistema automatiza la detección para mejorar la seguridad digital. 👌
 
 ### Relevancia
 - *Mejora la convivencia en comunidades digitales*
