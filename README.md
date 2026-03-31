@@ -33,32 +33,37 @@ la Modelacion Manual:
 - Es lenta 
 - No cubre todos los mensajes
 
-
 Este sistema automatiza la detección para mejorar la seguridad digital.
+
 ## Relevancia
 - Mejora la convivencia en comunidades digitales
 - Reduce carga de moderadores humanos
 - Apoya a plataformas de streaming y creadores de contenido
 - Promueve entornos más seguros
-## Tecnológias Utilizadas
-- Lenguaje: Python 
-- Deep Learning: PyTorch
-- NLP: Hugging Face Transformers
-- Datos: Pandas, Datasets
-- API: FastAPI
-- Evaluacion: Scikit-learn
-- Control de versiones: Git & GitHub
+  
+## Tecnologias Utilizadas
+
+| Área | Herramientas | 
+|-----------|-----------|
+| Lenguaje    | Python    | 
+| Deep Learning  | PyTorch   | 
+| NLP    | Hugging Face Transformers   | 
+| API | FastAPI   | 
+| Datos  | Pandas, conjuntos de datos  | 
+| Evaluación | Scikit-learn   | 
+| Versiones   | Git + GitHub | 
+
+  
 ## Arquitectura del Sistema
 - Usuario envía mensaje en chat 
 - Bot captura el mensaje 
 - API procesa el texto 
 - Modelo NLP clasifica el contenido
 - Sistema aplica reglas de moderación
-## Pipeline de Datos
+  
+## Datos y Recursos
 1. Recolección
-- Datasets públicos
-- Datos anonimizados
-- Datos sintéticos
+- Datasets Personalizados
 2. Preprocesamiento
 - Minúsculas
 - Limpieza de texto
@@ -73,44 +78,51 @@ Este sistema automatiza la detección para mejorar la seguridad digital.
 - Recall
 - F1-score
 - Matriz de confusión
+  
 ## Metricas de Evaluación
 - Precision: Exactitud en predicciones positivas
 - Recall: Capacidad de detectar contenido ofensivo
 - F1-score: Balance entre precision y recall
 - Matriz de confusión: Análisis de errores
+  
 ## Aprendizaje del Modelo
 - Aprendizaje supervisado
 - Datos etiquetados
 - Ajuste de hiperparámetros
 - Mejora iterativa mediante retroalimentación
+  
 ## Retroalimentación
 El sistema mejora mediante:
-
 - Análisis de errores
 - Ajuste de umbrales
 - Reentrenamiento del modelo
 - Refinamiento del dataset
+  
 ## Desafíos
 - Desbalance de datos
 - Ambigüedad del lenguaje
 - Sarcasmo e ironía
 - Falsos positivos
 - Limitaciones computacionales
+  
 ## Aplicaciones
 - Moderación automática de chats
 - Plataformas de streaming
 - Redes sociales
 - Sistemas de filtrado de contenido
+  
 ## Impacto Esperado
--  Mejora de entornos digitales 
+- Mejora de entornos digitales 
 - Reducción de contenido dañino 
 - Apoyo a moderadores humanos 
 - Uso responsable de IA
+  
 ## Futuras Mejoras
 - Optimización con ONNX o cuantización
 - Panel web de estadísticas
 - Soporte multilenguaje
 - Detección de emociones (extensión con ML)
+  
 ## Authors
 
 - [Jonathan Fernandez Cordova ](https://github.com/fercorfdzc)
