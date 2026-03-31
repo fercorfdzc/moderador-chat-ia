@@ -23,15 +23,16 @@ Desarrollar un sistema de moderación automática para chats en tiempo real que 
 - Evaluar el modelo con métricas (precision, recall, F1).           
 
 ## ¿Qué problema resuelve? 
-los chats en vivo suelen contener_
-- Insultos 
-- Acoso 
-- Lenguaje descriminatorio 
+los chats en vivo suelen contener:
+- *Insultos*
+- *Acoso* 
+- *Lenguaje descriminatorio* 
 
 la Modelacion Manual:
-- No es escalable 
-- Es lenta 
-- No cubre todos los mensajes
+<span style="color:red"> *No es escalable* </span>
+<span style="color:red"> *Es lenta* </span>
+<span style="color:red">- *No cubre todos los mensajes* </span> 
+
 
 Este sistema automatiza la detección para mejorar la seguridad digital.
 
@@ -54,7 +55,7 @@ Este sistema automatiza la detección para mejorar la seguridad digital.
 | **Versiones**   | *Git + GitHub* | 
   
 ## Arquitectura del Sistema
-- Usuario envía mensaje en chat 
+- El Usuario comenta mensajes en vivo
 - Bot captura el mensaje 
 - API procesa el texto 
 - Modelo NLP clasifica el contenido
