@@ -3,9 +3,9 @@
 Este proyecto consiste en el desarrollo de un sistema inteligente capaz de detectar lenguaje tóxico y discurso de odio en chats en tiempo real, utilizando técnicas modernas de Procesamiento de Lenguaje Natural (NLP).
 El sistema analiza mensajes escritos por los usuarios y los clasifica en distintas categorías como:
 
-- Contenido Limpio 
-- Lenguaje  toxico 
-- Disscurso de odio 
+- Contenido Limpio 💚
+- Lenguaje toxico ☢️ 
+- Lenguaje de odio 😡 
 
 ## Objetivo General
 Desarrollar un sistema de moderación automática para chats en tiempo real que identifique y clasifique contenido ofensivo mediante inteligencia artificial, permitiendo su integración en entornos reales de comunicación digital.
